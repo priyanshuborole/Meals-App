@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:text="What would you like \nto cook today?"
+        android:text="What's on the Menu\nfor Today? "
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -58,6 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Search"
+            android:textAllCaps="false"
             android:layout_marginEnd="5dp"
             app:cornerRadius="8dp"
             android:backgroundTint="@color/black"/>

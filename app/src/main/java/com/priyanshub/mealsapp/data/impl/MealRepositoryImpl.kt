@@ -18,7 +18,6 @@ class MealRepositoryImpl(
             emit(Resource.Loading())
             val response  = mealsApiService.getSearchedMeals(search)
             if (response.isSuccessful && response.body() != null){
-                Log.d("PRI", "getSearchedMealsRepo: ${response.body()}")
                 emit(Resource.Success(response.body()!!))
             }
             else{

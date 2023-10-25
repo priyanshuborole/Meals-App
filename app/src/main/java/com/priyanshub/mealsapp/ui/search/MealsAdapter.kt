@@ -36,8 +36,9 @@ class MealsAdapter(
 
         holder.binding.apply {
             tvMealName.text = meal.strMeal.toString()
-            val rate = "Rating - ${rating()}"
-            tvMealRating.text = rate
+//            val rate = "Rating - ${rating()}"
+//            tvMealRating.text = rate
+            rbMealRating.rating = rating().toFloat()
             holder.itemView.setOnClickListener {
                 listener.onMealClick(meal)
             }
@@ -47,7 +48,6 @@ class MealsAdapter(
         val randomDecimal = Random.nextDouble(2.5, 5.0)
         return String.format("%.2f", randomDecimal).toDouble()
     }
-
 }
 
 interface MealClickListener {

@@ -44,16 +44,27 @@
                 app:layout_constraintStart_toEndOf="@id/ivMealImage"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/tvMealRating"
+<!--            <TextView-->
+<!--                android:id="@+id/tvMealRating"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="15dp"-->
+<!--                android:text="4.2"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="14sp"-->
+<!--                app:layout_constraintStart_toEndOf="@id/ivMealImage"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/tvMealName"/>-->
+
+            <RatingBar
+                android:id="@+id/rbMealRating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:text="4.2"
-                android:textColor="@color/black"
-                android:textSize="14sp"
                 app:layout_constraintStart_toEndOf="@id/ivMealImage"
-                app:layout_constraintTop_toBottomOf="@id/tvMealName"/>
+                app:layout_constraintTop_toBottomOf="@id/tvMealName"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
